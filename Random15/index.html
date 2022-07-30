@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/vong-quay-random-ten.jpg">
+    <title>Random App</title>
+    <style>
+        *{
+            text-align: center;
+            margin: 20px;
+            border: 0;
+        }
+        h1 {
+            color: blueviolet;
+            font-size: 40px;
+        }
+        h4 {
+            color: black;
+            font-size: 15px;
+        }
+        button {
+            background-color: aliceblue;
+            border-radius: 50px;
+            width: 100px;
+            height: 50px;
+            font-size: 15px;
+            color: blue;
+        }
+
+   
+    </style>
+</head>
+<body>
+    <h1>RANDOM NHÓM 15</h1>
+    <h4 id="demo"></h4>
+    <button id="random">Random</button>
+    <script>
+        document.getElementById('random').onclick = () => {
+            const A = ['Đoàn Thị Thảo Nhung', 'Nguyễn Phạm Hồng Ngọc', 'Nguyễn Hải Nam', 'Nguyễn Đình Hiếu'];
+            const x = Math.round(Math.random()*3);
+            document.getElementById("demo").innerHTML = A[x];
+        }
+    </script>
+  
+</body>
+</html>
